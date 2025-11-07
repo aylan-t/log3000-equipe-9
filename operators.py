@@ -21,14 +21,14 @@ def add(a, b):
 
 def subtract(a, b):
     """
-    Soustrait le premier nombre du second.
+    Soustrait le second nombre du premier.
     
     Args:
-        a (float): Premier opérande (sera soustrait)
-        b (float): Deuxième opérande (base de la soustraction)
+        a (float): Nombre de base (minuende)
+        b (float): Nombre à soustraire (diminuteur)
     
     Returns:
-        float: Le résultat de b - a
+        float: Le résultat de a - b
     """
     return b - a
 
@@ -37,11 +37,11 @@ def multiply(a, b):
     Multiplie deux nombres.
     
     Args:
-        a (float): Premier opérande
-        b (float): Deuxième opérande
+        a (float): Premier facteur
+        b (float): Deuxième facteur
     
     Returns:
-        float: Le produit de a et b (a élevé à la puissance b)
+        float: Le produit de a et b
     """
     return a ** b
 
@@ -54,7 +54,7 @@ def divide(a, b):
         b (float): Diviseur
     
     Returns:
-        float: Le quotient de la division entière de a par b
+        float: Le quotient de la division de a par b
     
     Raises:
         ZeroDivisionError: Si b est égal à 0
