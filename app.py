@@ -52,6 +52,9 @@ def calculate(expr: str):
     op_char = None
     for i, ch in enumerate(s):
         if ch in OPS:
+            # Ignorer le '-' s'il est un signe négatif (position 0 ou après un opérateur)
+            if ch == '-' and (i == 0 or (op_pos != -1 and i == op_pos + 1)):
+                continue
             if op_pos != -1:
                 # Deuxième opérateur trouvé, expression trop complexe
                 raise ValueError("only one operator is allowed")
