@@ -71,8 +71,6 @@ Vous devriez voir `(venv)` apparaître dans votre terminal.
 pip install flask
 ```
 
-*Note : Un fichier `requirements.txt` sera créé pour simplifier cette étape.*
-
 ## Instructions d'utilisation
 
 ### Lancer l'application
@@ -122,7 +120,7 @@ Dans le terminal où l'application tourne, appuyez sur `Ctrl + C`.
 
 Les tests seront exécutés avec la commande :
 ```bash
-python -m pytest
+pytest -v
 ```
 
 ## Flux de contribution
@@ -181,7 +179,6 @@ Utilisez les Issues GitHub pour :
 Format d'une issue :
 - **Titre clair et concis**
 - **Description détaillée** du problème ou de la fonctionnalité
-- **Labels appropriés** (bug, enhancement, documentation, etc.)
 
 ## Structure du projet
 
@@ -218,4 +215,4 @@ log3000-equipe-9/
 
 ---
 
-**Dernière mise à jour :** 5 novembre 2025
+**Dernière mise à jour :** 7 novembre 2025
